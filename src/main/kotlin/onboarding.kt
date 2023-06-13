@@ -2,28 +2,31 @@ fun onboarding() {
     clearScreen100()
     var validInput = false
     while (!validInput) {
-        println("Please choose a language:\n1: Deutsch\n2: English")
-        val languageSelector = readln() ?: ""
+        println("Please choose a language:\n1: Deutsch\n2: English\n3: Türkisch\n4: Polnisch\n5: Arabisch")
+        val languageSelector = readln()
         println()
         when {
             languageSelector.startsWith("1") -> {
                 validInput = true
                 println("Du hast Deutsch gewählt. Das Spiel wird geladen...")
             }
+
             languageSelector.startsWith("2") -> {
                 validInput = true
                 println("You've selected English. The Game is loading...")
             }
+
             else -> {
-                println("Invalid selection. Please try again. Enter '1' for Deutsch or '2' for English.")
+                print(RED.ON)
+                println("Invalid selection. Please try again. Enter '1' for Deutsch or '2' for English or '3' for Türkisch or '4' for Polnisch or '5' for Arabisch.")
+                println()
+                print(RED.OFF)
             }
         }
     }
     Thread.sleep(1500)
     clearScreen100()
-    val ANSI_ORANGE = "\u001B[38;5;208m"
-    val ANSI_RESET = "\u001B[0m"
-    println(ANSI_ORANGE)
+    print(ORANGE.ON)
     println("8888888b.  8888888b.  8888888 888     888 8888888 888      8888888888  .d8888b.   8888888888  .d8888b. ")
     println("888   Y88b 888   Y88b   888   888     888   888   888      888        d88P  Y88b  888        d88P  Y88b")
     println("888    888 888    888   888   888     888   888   888      888        888    888  888        Y88b.     ")
@@ -43,16 +46,25 @@ fun onboarding() {
         println("Y88b  d88P  d8888888888  888       888  888        ")
         println(" Y8888P88  d88P     888  888       888  8888888888 ")*/
     println()
-    val textOrwell = "“All are equal, but some are more equal than others.“ - George Orwell, Animal Farm"
+    val textOrwell = "“All are equal, but some are more equal than others.“\n- George Orwell, Animal Farm\n\n"
     for (char in textOrwell) {
         print(char)
         Thread.sleep(50)
     }
     Thread.sleep(1000)
-    println()
-    println(ANSI_RESET)
+    print(ORANGE.OFF)
     //  clearScreen100()
-    val text = "Welcome to the Privilege Game! This game is designed to shed light on societal inequalities and the uneven distribution of opportunities. You'll gain insights into different life paths around the world and explore the social prerequisites for good jobs, education, and secure living conditions. Our goal is to foster empathy towards social minorities, encourage self-reflection on your societal position, and stimulate a stance of solidarity. Let's challenge our understanding and dive into the complex dynamics of privilege. Let's start the game! Hit Enter!"
+    val text =
+        ("Welcome to the Privilege Game! This game is designed to shed light on societal inequalities and the uneven distribution of opportunities. " +
+                "You'll gain insights into different life paths around the world and explore the social prerequisites for good jobs, education, and secure living conditions. " +
+                "Our goal is to foster empathy towards social minorities, encourage self-reflection on your societal position, and stimulate a stance of solidarity. " +
+                "Let's challenge our understanding and dive into the complex dynamics of privilege. " +
+                "${BLUE.ON}Hit Enter${BLUE.OFF}.")
     println(text.wordWrap(150))
+    readln()
+    println("The game works as follows:\nAt first: you choose yourself, or a charcter to play with.")
+    val intro =
+        "Secondly: you will be asked 20 questions. If you can answer the questions with 'yes', then press 1. If you want to answer with 'no', then press 2. For each question answered with 'yes', we take you one step forward - for one answered with 'no', we take you a step back. ${BLUE.ON}Enter${BLUE.OFF}."
+    println(intro.wordWrap(150))
     readln()
 }
