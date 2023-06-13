@@ -2,29 +2,49 @@ fun onboarding() {
     clearScreen100()
     var validInput = false
     while (!validInput) {
-        println("Please choose a language:\n1: Deutsch\n2: English\n3: Türkisch\n4: Polnisch\n5: Arabisch")
+        println("Please choose a language:\n1: Deutsch\n2: English\n3: Türkçe\n4: Polski\n5: العربية")
         val languageSelector = readln()
         println()
         when {
             languageSelector.startsWith("1") -> {
                 validInput = true
                 println("Du hast Deutsch gewählt. Das Spiel wird geladen...")
+                chosenLanguage = Deutsch()
             }
 
             languageSelector.startsWith("2") -> {
                 validInput = true
                 println("You've selected English. The Game is loading...")
+                chosenLanguage = English()
+            }
+
+            languageSelector.startsWith("3") -> {
+                validInput = true
+                println("Türkçe seçtiniz. Oyun yükleniyor...")
+                chosenLanguage = Tuerkisch()
+            }
+
+            languageSelector.startsWith("4") -> {
+                validInput = true
+                println("Wybrałeś Polski. Gra się ładuje...")
+                chosenLanguage = Polnisch()
+            }
+
+            languageSelector.startsWith("5") -> {
+                validInput = true
+                println("لقد اخترت العربية. اللعبة تحمل...")
+                chosenLanguage = Arabisch()
             }
 
             else -> {
                 print(RED.ON)
-                println("Invalid selection. Please try again. Enter '1' for Deutsch or '2' for English or '3' for Türkisch or '4' for Polnisch or '5' for Arabisch.")
+                println("Invalid selection. Please try again. Enter 1: Deutsch 2: English 3: Türkçe 4: Polski 5: العربية")
                 println()
                 print(RED.OFF)
             }
         }
     }
-    Thread.sleep(1500)
+Thread.sleep(1500)
     clearScreen100()
     print(ORANGE.ON)
     println("8888888b.  8888888b.  8888888 888     888 8888888 888      8888888888  .d8888b.   8888888888  .d8888b. ")
@@ -35,16 +55,6 @@ fun onboarding() {
     println("888        888 T88b     888     Y88o88P     888   888      888        888    888  888               888")
     println("888        888  T88b    888      Y888P      888   888      888        Y88b  d88P  888        Y88b  d88P")
     println("888        888   T88b 8888888     Y8P     8888888 88888888 8888888888   Y8888P88  8888888888   Y8888P  ")
-    /*    println()
-        println()
-        println(" .d8888b.         d8888  888b     d888  8888888888 ")
-        println("d88P  Y88b       d88888  8888b   d8888  888        ")
-        println("888    888      d88P888  88888b.d88888  888        ")
-        println("888            d88P 888  888Y88888P888  8888888    ")
-        println("888  88888    d88P  888  888 Y888P 888  888        ")
-        println("888    888   d88P   888  888  Y8P  888  888        ")
-        println("Y88b  d88P  d8888888888  888       888  888        ")
-        println(" Y8888P88  d88P     888  888       888  8888888888 ")*/
     println()
     val textOrwell = "“All are equal, but some are more equal than others.“\n- George Orwell, Animal Farm\n\n"
     for (char in textOrwell) {
@@ -54,17 +64,15 @@ fun onboarding() {
     Thread.sleep(1000)
     print(ORANGE.OFF)
     //  clearScreen100()
-    val text =
-        ("Welcome to the Privilege Game! This game is designed to shed light on societal inequalities and the uneven distribution of opportunities. " +
-                "You'll gain insights into different life paths around the world and explore the social prerequisites for good jobs, education, and secure living conditions. " +
-                "Our goal is to foster empathy towards social minorities, encourage self-reflection on your societal position, and stimulate a stance of solidarity. " +
-                "Let's challenge our understanding and dive into the complex dynamics of privilege. " +
-                "${BLUE.ON}Hit Enter${BLUE.OFF}.")
-    println(text.wordWrap(150))
+    val welcomeIntro = chosenLanguage?.getMessage("welcomeIntro")
+    if (welcomeIntro != null) {
+        println(welcomeIntro.wordWrap(150))
+    }
     readln()
-    println("The game works as follows:\nAt first: you choose yourself, or a charcter to play with.")
-    val intro =
-        "Secondly: you will be asked 20 questions. If you can answer the questions with 'yes', then press 1. If you want to answer with 'no', then press 2. For each question answered with 'yes', we take you one step forward - for one answered with 'no', we take you a step back. ${BLUE.ON}Enter${BLUE.OFF}."
-    println(intro.wordWrap(150))
+    //println("The game works as follows:\nAt first: you choose yourself, or a charcter to play with.")
+    val anleitungIntro = chosenLanguage?.getMessage("anleitungIntro")
+    if (anleitungIntro != null) {
+        println(anleitungIntro.wordWrap(150))
+    }
     readln()
 }
