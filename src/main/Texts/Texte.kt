@@ -5,12 +5,13 @@ abstract class Language {
 class English : Language() {
     private val messages = mapOf(
         "welcomeIntro" to "${GREEN.ON}Welcome to the Privilege Game!${GREEN.OFF} This game is designed to shed light on societal inequalities and the uneven distribution of opportunities. You'll gain insights into different life paths around the world and explore the social prerequisites for good jobs, education, and secure living conditions. Our goal is to foster empathy towards social minorities, encourage self-reflection on your societal position, and stimulate a stance of solidarity. Let's challenge our understanding and dive into the complex dynamics of privilege. ${BLUE.ON}Hit Enter${BLUE.OFF}.",
-        "anleitungIntro" to "${GREEN.ON}The game works as follows:${GREEN.OFF}2 At first: you choose a character. Secondly: you will be asked 26 questions. If you can answer the questions with 'yes', then press 1. If you want to answer with 'no', then press 2. For each question answered with 'yes', we take you one step forward - for one answered with 'no', we take you a step back. Everyone starts in the middle of the progress bar. ${BLUE.ON}Enter${BLUE.OFF}.",
-        "characterChoice" to "${GREEN.ON}Choose your character:${GREEN.OFF} do you want to play yourself, or do you like to choose one of 20 pre-made characters?\n1. I want to play myself\n2. I want to choose a pre-made character",
-        "selfChoice" to "You have chosen to play yourself.",
+        "anleitungIntro" to "${GREEN.ON}The game works as follows:${GREEN.OFF} You will be asked 20+ questions. If you can answer the questions with 'yes', then press 1. If you want to answer with 'no', then press 2. For each question answered with 'yes', we take you one step forward - for one answered with 'no', we take you a step back. We added 5 NPCs. Everyone starts in the middle of the progress bar. ${BLUE.ON}Enter${BLUE.OFF}.",
+        "characterChoice" to "${GREEN.ON}Choose your character:${GREEN.OFF} do you want to play yourself, or do you like to choose one of 20 pre-made characters?\n\n1. I want to play myself\n2. I want to choose a pre-made character",
+        "selfChoice" to "You have chosen to play yourself. Try to answer the questions as honestly as possible.",
         "roleAdaption" to "This is your role. Try to adapt to it as good as possible. Close your eyes and try to imagine yourself in this role for a second. Answer all following questions based on this role.",
         "game1fragen" to "Question {0}: {1}\n1 for Yes, 2 for No",
-        "invalidChoice" to "${RED.ON}You have chosen an invalid option. Please try again.${RED.OFF}\n\n"
+        "invalidChoice" to "${RED.ON}You have chosen an invalid option. Please try again.${RED.OFF}\n\n",
+        "auswertung1" to ""
     )
     override fun getMessage(key: String): String {
         return messages[key] ?: throw IllegalArgumentException("Key not found: $key")

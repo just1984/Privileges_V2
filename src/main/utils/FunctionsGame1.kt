@@ -5,7 +5,8 @@ fun printProgressBar(current: Int, total: Int, color: String = WHITE.ON, name: S
     val remaining = progressBarLength - filled
 
     val builder = StringBuilder()
-    val formattedName = name.padEnd(10) // Formatieren Sie den Namen, um sicherzustellen, dass er eine Breite von 10 Zeichen hat
+    val formattedName =
+        name.padEnd(10) // Formatieren Sie den Namen, um sicherzustellen, dass er eine Breite von 10 Zeichen hat
     builder.append("$formattedName: ") // Fügen Sie den Namen vor dem Fortschrittsbalken hinzu
     builder.append(color)
     for (i in 0 until filled) {
@@ -59,14 +60,18 @@ fun game1deu() {
 }
 
 
+// Globale Variablen
+var yesCount = 0
+var noCount = 0
+
 fun game1eng() {
     var position = fragen.size * 10
-    val gemischteFragen = fragenEng.shuffled()
-    for (i in gemischteFragen.indices) {
+    val gemischteFragenFakten = fragenFaktenEng.shuffled()  // Fragen und Fakten gemeinsam mischen
+    for (i in gemischteFragenFakten.indices) {
         var answer: String
         do {
             print(CYAN.ON)
-            println("Question ${i + 1} / ${fragenEng.size}: ${gemischteFragen[i]}\n1 for Yes, 2 for No")
+            print("Question ${i + 1} / ${fragenFaktenEng.size}: ${gemischteFragenFakten[i].first.wordWrap(100)}\n1 for Yes, 2 for No ")
             print(CYAN.OFF)
             answer = readln()
             println()
@@ -77,13 +82,18 @@ fun game1eng() {
                 println()
             }
         } while (answer != "1" && answer != "2")
-        if (answer == "1") position += 10 else position -= 10
+        if (answer == "1") {
+            position += 10
+            yesCount++
+        } else {
+            position -= 10
+            noCount++
+        }
         printProgressBar(position, fragen.size * 20, WHITE.ON, "Spieler1")
-        updateAdditionalProgressBars() // Zufällige Aktualisierung der Position der zusätzlichen Balken
+        updateAdditionalProgressBars()
         printAdditionalProgressBars()
-        println ("Everyone answered the QUestion and made a step forward or backward.")
-        println ("The next one will be shown in a second..")
-        Thread.sleep(3000)
+        println(gemischteFragenFakten[i].second.wordWrap(100))  // Fakt anzeigen
+        println()
     }
     println("")
 }

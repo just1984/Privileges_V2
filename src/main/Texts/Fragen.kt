@@ -26,6 +26,9 @@ val frage23: String = "Kannst du dich am Arbeitsplatz (oder auf der Strasse) sic
 val frage24: String = "Kannst du davon auzsgehen, dass du die selben Karrierechancen hast wie deine männlich Kollegen?"
 val frage25: String = "Kannst du dich im Sommer in der Öffentlichkeit so kleiden wie du möchtest ohne das Gefühl zu haben überall angestarrt zu werden?"
 val frage26: String = "Hast du das Gefühl du kannst dich jederzeit für Hilfe an die Polizei wenden?"
+val frage27: String = "Wurde in deiner Schule deine Muttersprache gesprochen?"
+val frage28: String = "Du wurdest noch nie aufgrund deiner Hautfarbe, Religion, Herkunft oder gebrochener Sprache diskriminiert?"
+val frage29: String = "Dein Arbeitgeber wird dich nie sexuell belästigen."
 
 val fragen = listOf(
     frage1,
@@ -53,7 +56,10 @@ val fragen = listOf(
     frage23,
     frage24,
     frage25,
-    frage26
+    frage26,
+    frage27,
+    frage28,
+    frage29
 )
 
 // ENGLISH
