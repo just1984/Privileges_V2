@@ -1,5 +1,3 @@
-import kotlin.concurrent.thread
-
 fun onboarding2() {
     val rollenZuweisung = rollenListe.shuffled()
     println(chosenLanguage?.getMessage("characterChoice")?.wordWrap(100))
@@ -23,5 +21,4 @@ fun onboarding2() {
     Thread.sleep(3000)
     println("${BLUE.ON}Hit Enter to start the Game${BLUE.OFF}.")
     readln()
-    //clearScreen100()
 }
