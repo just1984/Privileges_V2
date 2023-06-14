@@ -131,7 +131,7 @@ val rollenListe = listOf(
     rollenKarte20,
     rollenKarte21,
     rollenKarte22,
-    rollenKarte23,
+  /*rollenKarte23,
     rollenKarte24,
     rollenKarte25,
     rollenKarte26,
@@ -170,5 +170,5 @@ val rollenListe = listOf(
     rollenKarte59,
     rollenKarte60,
     rollenKarte61,
-    rollenKarte62
+    rollenKarte62*/
 )

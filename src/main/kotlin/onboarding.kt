@@ -45,7 +45,8 @@ fun onboarding() {
         }
     }
 Thread.sleep(1500)
-    clearScreen100()
+    println()
+    //clearScreen100()
     print(ORANGE.ON)
     println("8888888b.  8888888b.  8888888 888     888 8888888 888      8888888888  .d8888b.   8888888888  .d8888b. ")
     println("888   Y88b 888   Y88b   888   888     888   888   888      888        d88P  Y88b  888        d88P  Y88b")
