@@ -1,4 +1,4 @@
-![My Diagram](./imag/screen2priv.JPG)
+![My Diagram](./img/screen2priv.JPG)
 
 # Privileges: A Terminal-Based Game
 ## 1. About the Game
