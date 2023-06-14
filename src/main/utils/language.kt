@@ -4,11 +4,11 @@ abstract class Language {
 }
 class English : Language() {
     private val messages = mapOf(
-        "welcomeIntro" to "Welcome to the Privilege Game! This game is designed to shed light on societal inequalities and the uneven distribution of opportunities. You'll gain insights into different life paths around the world and explore the social prerequisites for good jobs, education, and secure living conditions. Our goal is to foster empathy towards social minorities, encourage self-reflection on your societal position, and stimulate a stance of solidarity. Let's challenge our understanding and dive into the complex dynamics of privilege. ${BLUE.ON}Hit Enter${BLUE.OFF}.",
-        "anleitungIntro" to "The game works as follows: At first: you choose yourself, or a charcter to play with. Secondly: you will be asked 20 questions. If you can answer the questions with 'yes', then press 1. If you want to answer with 'no', then press 2. For each question answered with 'yes', we take you one step forward - for one answered with 'no', we take you a step back. ${BLUE.ON}Enter${BLUE.OFF}.",
-        "characterChoice" to "First off, do you want to play yourself, or do you like to choose one of 20 pre-made characters?\n1. I want to play myself\n2. I want to choose a pre-made character",
+        "welcomeIntro" to "${GREEN.ON}Welcome to the Privilege Game!${GREEN.OFF} This game is designed to shed light on societal inequalities and the uneven distribution of opportunities. You'll gain insights into different life paths around the world and explore the social prerequisites for good jobs, education, and secure living conditions. Our goal is to foster empathy towards social minorities, encourage self-reflection on your societal position, and stimulate a stance of solidarity. Let's challenge our understanding and dive into the complex dynamics of privilege. ${BLUE.ON}Hit Enter${BLUE.OFF}.",
+        "anleitungIntro" to "${GREEN.ON}The game works as follows:${GREEN.OFF}2 At first: you choose a character. Secondly: you will be asked 26 questions. If you can answer the questions with 'yes', then press 1. If you want to answer with 'no', then press 2. For each question answered with 'yes', we take you one step forward - for one answered with 'no', we take you a step back. Everyone starts in the middle of the progress bar. ${BLUE.ON}Enter${BLUE.OFF}.",
+        "characterChoice" to "${GREEN.ON}Choose your character:${GREEN.OFF} do you want to play yourself, or do you like to choose one of 20 pre-made characters?\n1. I want to play myself\n2. I want to choose a pre-made character",
         "selfChoice" to "You have chosen to play yourself.",
-        "roleAdaption" to "This is your role. Try to adapt to it as good as possible.\nClose your eyes and try to imagine yourself in this role for a second. ${BLUE.ON}Enter${BLUE.OFF}.",
+        "roleAdaption" to "This is your role. Try to adapt to it as good as possible. Close your eyes and try to imagine yourself in this role for a second. Answer all following questions based on this role.",
         "game1fragen" to "Question {0}: {1}\n1 for Yes, 2 for No",
         "invalidChoice" to "${RED.ON}You have chosen an invalid option. Please try again.${RED.OFF}\n\n"
     )
@@ -75,7 +75,7 @@ class Tuerkisch : Language() {
 // Hier ist der Code der Die Fragen lädt und den Progress-Balken steuert:
 
 fun game1deu() {
-    var position = 0
+    var position = fragen.size * 10 / 2
     val gemischteFragen = fragen.shuffled()
     for (i in gemischteFragen.indices) {
         var answer: String
@@ -93,7 +93,7 @@ fun game1deu() {
         } while (answer != "1" && answer != "2")
 
         if (answer == "1") position += 10 else position -= 10
-        printProgressBar(position, fragen.size * 10)
+        printProgressBar(position, fragen.size * 20)
         println()
     }
     println("")
@@ -101,7 +101,7 @@ fun game1deu() {
 
 
 fun game1eng() {
-    var position = 0
+    var position = fragen.size * 10
     val gemischteFragen = fragenEng.shuffled()
     for (i in gemischteFragen.indices) {
         var answer: String
@@ -119,7 +119,7 @@ fun game1eng() {
         } while (answer != "1" && answer != "2")
 
         if (answer == "1") position += 10 else position -= 10
-        printProgressBar(position, fragenEng.size * 10)
+        printProgressBar(position, fragen.size * 20)
         println()
     }
     println("")

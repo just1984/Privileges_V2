@@ -60,20 +60,20 @@ Thread.sleep(1500)
     val textOrwell = "“All are equal, but some are more equal than others.“\n- George Orwell, Animal Farm\n\n"
     for (char in textOrwell) {
         print(char)
-        Thread.sleep(50)
+        Thread.sleep(30)
     }
     Thread.sleep(1000)
     print(ORANGE.OFF)
     //  clearScreen100()
     val welcomeIntro = chosenLanguage?.getMessage("welcomeIntro")
     if (welcomeIntro != null) {
-        println(welcomeIntro.wordWrap(150))
+        println(welcomeIntro.wordWrap(100))
     }
     readln()
     //println("The game works as follows:\nAt first: you choose yourself, or a charcter to play with.")
     val anleitungIntro = chosenLanguage?.getMessage("anleitungIntro")
     if (anleitungIntro != null) {
-        println(anleitungIntro.wordWrap(150))
+        println(anleitungIntro.wordWrap(100))
     }
     readln()
 }

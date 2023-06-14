@@ -12,9 +12,14 @@ fun printProgressBar(current: Int, total: Int) {
         builder.append(" ")
     }
     //print(RED.ON)
-    print("\r$builder $current/$total")
-   // print(RED.OFF)
     println()
+    println("\r$builder")
+    println("This status bar takes you one step forward or one step back." +
+            "\nHit ${BLUE.ON}Enter${BLUE.OFF} for the next question.")
+    readln()
+    clearScreen100()
+    // "${(current/10)}/${(total/10)}
+    // print(RED.OFF)
 }
 
 fun game1() {
