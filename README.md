@@ -1,3 +1,5 @@
+![My Diagram](./imag/screen2priv.JPG)
+
 # Privileges: A Terminal-Based Game
 ## 1. About the Game
 Privileges is a terminal-based game designed to shed light on societal inequalities and the uneven distribution of opportunities. The game provides insights into various life paths across the globe and explores the social prerequisites for good jobs, education, and secure living conditions. The goal is to foster empathy towards social minorities, encourage self-reflection on one's societal position, and stimulate a stance of solidarity.
