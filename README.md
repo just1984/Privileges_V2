@@ -52,3 +52,5 @@ Constructors: Constructors are implicitly used in this code to create instances 
 Functions: Various functions are used in this code to perform specific tasks. For example, the wordWrap() function is used to wrap a text so that it fits within a certain width. The padEnd() function is used to extend the name in the printProgressBar() function to a certain length. The Override function is used in the language classes to override the getMessage() method of the base class Language.
 
 Feel free to navigate through the code and try out the program. I hope it provides a good insight into what I've learned during my course and how I've been able to put those learnings into practice. Thank you for visiting!
+
+![Syntax Institute](./img/syntax-alt-image.png)
