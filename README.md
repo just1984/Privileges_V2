@@ -27,7 +27,8 @@ The game is designed to be customizable and extendable. The questions can be adj
 This project is open source under the MIT license. This means you are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided you include the appropriate copyright notice and disclaimers.
 
 ## 6. Contact
-For any queries or suggestions, you can reach out through GitHub or visit https://www.borisniehaus.de.
+For any queries or suggestions, you can reach out through GitHub
+or visit https://www.borisniehaus.de for other ways of reaching out.
 
 ## 7. Contributing
 Contributions are welcome! Feel free to submit a pull request or open an issue on GitHub.
