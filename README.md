@@ -45,9 +45,9 @@ I've written the program in Kotlin, using IntelliJ. This project gave me the opp
 
 Loops: Loops are used multiple times in this code. An example is the while loop in the onboarding() function, which prompts the user to select a language until a valid input is made. Another while loop is used in the functions game1deu(), game1eng(), game1tur(), game1pol(), and game1arb() to prompt the user to input an answer to each question until a valid input is made.
 
-Classes: Classes are used in this code to model different languages. There is an abstract class Language that serves as a base class for the specific language classes: English, German, Polish, Arabic, and Turkish. Each of these classes inherits from the Language class and implements the getMessage() method to retrieve messages in the respective language.
+Classes: Classes are used in this code to model different things. For example, there is a RolleKarte class that models role cards for players. Each role card has a name, age, origin, fate, and gender.
 
-Constructors: Constructors are implicitly used in this code to create instances of the language classes. For example, when chosenLanguage = Deutsch() is called, the default constructor of the Deutsch class is invoked to create a new instance of this class.
+Constructors: Constructors are implicitly used in this code to create instances of classes. For example, when creating role cards, the constructor of the RolleKarte class is invoked to create a new instance of this class. When creating a new language, the default constructor of the respective language class is invoked to create a new instance of this class.
 
 Functions: Various functions are used in this code to perform specific tasks. For example, the wordWrap() function is used to wrap a text so that it fits within a certain width. The padEnd() function is used to extend the name in the printProgressBar() function to a certain length. The Override function is used in the language classes to override the getMessage() method of the base class Language.
 
