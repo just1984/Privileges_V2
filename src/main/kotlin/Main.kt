@@ -1,6 +1,13 @@
 fun main() {
+    var playAgain = "y"
     onboarding()
-    onboarding2()
-    game1()
-    auswertungEng()
+    while (playAgain == "y") {
+        onboarding2()
+        game1()
+        auswertungEng()
+        println()
+        println("Do you like to play again? (y/n)")
+        playAgain = readln()
+        println()
+    }
 }

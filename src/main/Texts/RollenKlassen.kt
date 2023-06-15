@@ -99,7 +99,7 @@ val rollenKarte12_class = RolleKarte(
     alter = 45,
     herkunft = "Berlin, Deutschland",
     geschlecht = "weiblich",
-    schicksal = "Du bist Geschäftsführerin eines Schmuckunternehmens in Berlin. An manchen Tagen arbeitest du bis zu 15 Stunden, aber du liebst deine Arbeit. Zur Entspannung machst du öfter Kurztripps nach Norditalien."
+    schicksal = "Du bist Geschäftsführerin eines Schmuckunternehmens. An manchen Tagen arbeitest du bis zu 15 Stunden, aber du liebst deine Arbeit. Zur Entspannung machst du öfter Kurztripps nach Norditalien."
 )
 
 val rollenKarte13_class = RolleKarte(
