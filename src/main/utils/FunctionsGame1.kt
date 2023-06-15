@@ -15,6 +15,7 @@ fun printProgressBar(current: Int, total: Int, color: String = WHITE.ON, name: S
     for (i in 0 until remaining) {
         builder.append(" ")
     }
+    builder.append("|") // Fügen Sie den geraden Strich am Ende des Fortschrittsbalkens hinzu
     builder.append(WHITE.OFF)
     println("\r$builder")
     //clearScreen100()

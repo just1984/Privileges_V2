@@ -34,7 +34,7 @@ val rollenKarte4_class = RolleKarte(
     name = "Tom",
     alter = 38,
     herkunft = "USA",
-    geschlecht = "männlich",
+    geschlecht = "divers",
     schicksal = "Du hast in der US-Marine gearbeitet und warst in Afghanistan stationiert. Nun lebst du in Chicago auf der Straße. Du trinkst viel Alkohol, um die schrecklichen Bilder in deinem Kopf vergessen zU können."
 )
 
@@ -106,7 +106,7 @@ val rollenKarte13_class = RolleKarte(
     name = "Carlos",
     alter = 21,
     herkunft = "Madrid, Spanien",
-    geschlecht = "männlich",
+    geschlecht = "divers",
     schicksal = "Du hast einen kleinen Gemüsestand auf der Straße von Madrid. Du würdest gerne auf die Universität gehen, aber du hast keinen Schulabschluss und auch keine Berufsausbildung gemacht."
 )
 
