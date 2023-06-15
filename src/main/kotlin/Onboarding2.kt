@@ -1,4 +1,3 @@
-var spielerNameSelf = ""
 fun onboarding2() {
     val rollenZuweisung = rollenListe.shuffled()
     print(chosenLanguage?.getMessage("characterChoice")?.wordWrap(100))
@@ -12,7 +11,7 @@ fun onboarding2() {
         println(chosenLanguage?.getMessage("roleAdaption")?.wordWrap(100))
         println()
         print(ORANGE.ON)
-        println(randomCharacter.wordWrap(100))
+        println("Dein Name ist ${randomCharacter.name}, du bist ${randomCharacter.geschlecht} und ${randomCharacter.alter} Jahre alt. Deine Herkunft ist ${randomCharacter.herkunft}. ${randomCharacter.schicksal}".wordWrap(100))
         print(ORANGE.OFF)
         Thread.sleep(3000)
     } else {

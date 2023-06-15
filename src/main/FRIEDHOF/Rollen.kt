@@ -1,3 +1,4 @@
+/*
 val rollenKarte1: String =
     "Du bist ein 17-jähriges Mädchen, das im Südsudan lebt. Aufgrund des Bürgerkriegs musstest du mit deiner Familie fliehen. Du lebst jetzt in einem Flüchtlingslager und bekommst dort Essen verteilt. Du hast keinen Zugang zu Bildung, und deine täglichen Aufgaben bestehen darin, auf deine jüngeren Geschwister aufzupassen und Wasser aus einem nahe gelegenen Brunnen zu holen."
 val rollenKarte2: String =
@@ -131,7 +132,8 @@ val rollenListe = listOf(
     rollenKarte20,
     rollenKarte21,
     rollenKarte22,
-  /*rollenKarte23,
+  */
+/*rollenKarte23,
     rollenKarte24,
     rollenKarte25,
     rollenKarte26,
@@ -170,5 +172,6 @@ val rollenListe = listOf(
     rollenKarte59,
     rollenKarte60,
     rollenKarte61,
-    rollenKarte62*/
-)
+    rollenKarte62*//*
+
+)*/
