@@ -1,11 +1,11 @@
 val fragenFaktenEng = listOf(
     Pair(
-        "Hast du als Kind regelmäßig die Schule mindestens bis zur 9. Klasse besucht?",
-        "Fakt: Rund 260 Millionen Kinder und Jugendliche weltweit gehen laut Schätzung der UNESCO nicht zur Schule. Das sind 1 von 5 Kindern und Jugendlichen im Grundschulalter, 1 von 4 Jugendlichen im Sekundarbereich. - Statistisches Bundesamt"
+        "Hast du als Kind regelmäßig die Schule besucht (mindestens bis zur 9. Klasse)?",
+        "Fakt: Rund 260 Millionen Kinder und Jugendliche weltweit gehen laut Schätzung der UNESCO nicht zur Schule. Das sind 1 von 5 Kindern und Jugendlichen im Grundschulalter. - Statistisches Bundesamt"
     ),
     Pair(
         "Hattest du immer Zugang zu sauberem Trinkwasser?",
-        "Fakt: Die Weltgesundheitsorganisation berichtet, dass 2020 74% der Weltbevölkerung (5,8 Milliarden Menschen) einen leichten Zugang zu sauberem Trinkwasser hatten. Die restlichen 2 Milliarden Menschen hatten 2020 keinen leichten und sauberen Zugang. - WHO"
+        "Fakt: Zugang zu sauberem Trinkwasser ist trotz globaler Fortschritte noch immer ein Privileg, da etwa zwei Milliarden Menschen weltweit regelmäßig keinen Zugang zu sauberem Wasser haben. Der Klimawandel und anhaltende bewaffnete Konflikte verschärfen diese Situation, vor allem in ärmeren und ländlichen Regionen der Welt, wo die Auswirkungen von Wassermangel und schlechter Hygiene besonders dramatisch sind und sogar Bildungschancen und Gesundheitsversorgung beeinträchtigen. - UNICEF"
     ),
     Pair(
         "Gab es in dem Zuhause, in dem du aufgewachsen bist, viele Bücher?",
@@ -13,7 +13,7 @@ val fragenFaktenEng = listOf(
     ),
     Pair(
         "Bist du noch nie auf Grund deiner Hautfarbe oder sonstiger äußerlicher Merkmale beschimpft oder ausgegrenzt worden?",
-        "Fakt: Diskriminierung aufgrund von Hautfarbe oder anderen äußerlichen Merkmalen kann zu chronischem Stress führen, der negative Auswirkungen auf die geistige und körperliche Gesundheit von Kindern hat. Darüber hinaus kann sie das Selbstwertgefühl und das Selbstvertrauen eines Kindes untergraben, was zu schlechteren schulischen Leistungen und begrenzten Zukunftsaussichten führen kann."
+        "Fakt: Mobbing und Diskriminierung aufgrund von Hautfarbe oder anderen äußerlichen Merkmalen kann zu chronischem Stress führen, der negative Auswirkungen auf die geistige und körperliche Gesundheit von Kindern hat. Darüber hinaus kann sie das Selbstwertgefühl und das Selbstvertrauen eines Kindes untergraben, was zu schlechteren schulischen Leistungen und begrenzten Zukunftsaussichten führen kann."
     ),
     Pair(
         "Lebst du in einem Haus mit Telefon-, Fernseher- und Internetanschluss?",
@@ -21,19 +21,11 @@ val fragenFaktenEng = listOf(
     ),
     Pair(
         "Wenn du krank wirst, machst du dir keine Gedanken um deine medizinische Versorgung?",
-        "Fakt: Die Weltgesundheitsorganisation (WHO) berichtet, dass mindestens die Hälfte der Weltbevölkerung keinen vollen Zugang zu grundlegenden Gesundheitsdiensten hat. Etwa 100 Millionen Menschen werden aufgrund von Gesundheitskosten in die extreme Armut getrieben."
+        "Fakt: Eine Milliarde Menschen haben keinen Zugang zu einer angemessenen und bezahlbaren Gesundheitsversorgung. Armut ist eine Hauptursache für Krankheiten und kann oft den Zugang zu medizinischer Versorgung, sauberem Wasser und sanitären Einrichtungen verhindern, was zu gesundheitlichen Problemen führt, einschließlich sozialer Entwurzelung und zugehörigen Risiken wie Prostitution und Gewalt. Jährlich fallen laut WHO und Weltbank rund 100 Millionen Menschen aufgrund von Gesundheitskosten unter die Armutsgrenze, während Arbeitslosigkeit, mangelnde Bildung und fehlende Familienplanungsmöglichkeiten die gesundheitliche Situation weiter verschlechtern. - Bundesministerium für Entwicklung und Zusammenarbeit"
     ),
     Pair(
-        "Kannst du mindestens ein Mal im Jahr verreisen und Urlaub machen?",
-        "Fakt: Eine Analyse der Welttourismusorganisation (UNWTO) zeigt, dass 57% der Weltbevölkerung im Jahr 2015 nicht international gereist sind, was auf finanzielle Einschränkungen und Grenzbeschränkungen zurückzuführen sein könnte."
-    ),
-    Pair(
-        "Hast du keine Angst um die Zukunft deiner Kinder?",
-        "Fakt: Laut NASA war das Jahr 2020 gemeinsam mit 2016 das wärmste Jahr seit Beginn der Aufzeichnungen im Jahr 1880, was auf den anhaltenden Erwärmungstrend durch menschliche Aktivitäten hinweist."
-    ),
-    Pair(
-        "Kannst du Freunde und Freundinnen zu dir nach Hause einladen?",
-        ".."
+        "Kannst du mindestens ein Mal im Jahr Urlaub machen?",
+        "Fakt: Urlaub ist Luxus. Rund 27,6% der EU-Bürger*innen konnte sich 2021 keine ein-wöchige Urlaubsreise finanzieren. - Statista"
     ),
     Pair(
         "Übst du deinen Wunschberuf aus oder glaubst du, ihn zukünftig ausüben zu können?",
@@ -73,23 +65,23 @@ val fragenFaktenEng = listOf(
     ),
     Pair(
         "Kannst du offen und ohne Probleme deine Religion ausüben?",
-        "Fakt: Laut dem Pew Research Center leben etwa 5,5 Milliarden Menschen in Ländern, in denen die Religionsfreiheit eingeschränkt ist."
+        "Fakt: In etwa einem Drittel aller Länder (31,6 %), in denen zwei Drittel der Weltbevölkerung leben, werden Verstöße gegen die Religionsfreiheit begangen. Dabei leben fast 5,2 Milliarden Menschen in den 62 Ländern, in denen die Religionsfreiheit schwerwiegend verletzt wird, einschließlich bevölkerungsreicher Länder wie China, Indien und Pakistan."
     ),
     Pair(
         "Kannst du dich nach Einbruch der Dunkelheit sicher auf der Straße fühlen?",
-        "Fakt: Laut einer Studie der EU-Grundrechteagentur aus dem Jahr 2014 haben 27% der Frauen in der EU seit ihrem 15. Lebensjahr körperliche und/oder sexuelle Gewalt erlebt. In Deutschland sind es 35%."
+        "Fakt: In der EU hat jede dritte Frau seit dem Alter von 15 Jahren irgendeine Form von körperlichem und/oder sexuellem Übergriff erlebt (FRA Europa.eu). Laut einer Studie aus 2020 fühlen sich etwa 89% der Frauen und 88% der Personen mit diverser Geschlechtsidentität mindestens einmal verbal sexuell belästigt"
     ),
     Pair(
-        "Kannst du dich am Arbeitsplatz (oder auf der Straße) sicher vor sexueller Belästigung fühlen?",
-        "Fakt: Laut einer Studie der EU-Grundrechteagentur aus dem Jahr 2014 haben 55% der Frauen in der EU seit ihrem 15. Lebensjahr sexuelle Belästigung erlebt. In Deutschland sind es 58%."
+        "Kannst du dich am Arbeitsplatz sicher vor sexueller Belästigung fühlen?",
+        "Fakt: Sexuelle Belästigung am Arbeitsplatz umfasst unerwünschtes sexualisiertes Verhalten, einschließlich verbaler, physischer und non-verbaler Belästigungen. Laut der neuesten Studie der Antidiskriminierungsstelle des Bundes haben 62% der Befragten sexualisierte Kommentare, 44% unerwünschte Blicke, Gesten oder Nachpfeifen und 26% unerwünschte Berührungen erlebt."
     ),
     Pair(
         "Kannst du davon ausgehen, dass du die selben Karrierechancen hast wie deine männlichen Kollegen?",
-        "Fakt: Laut dem Global Gender Gap Report 2018 des Weltwirtschaftsforums besteht weltweit immer noch eine geschlechtsspezifische Lücke in Bezug auf wirtschaftliche Teilhabe und Chancen."
+        "Fakt: Frauen* haben im Jahr 2022 in Deutschland pro Stunde durchschnittlich 18 % weniger verdient als Männer. Selbst mit vergleichbaren Qualifikationen, Tätigkeiten und Erwerbsbiografien verdienten sie im Schnitt 7 % weniger pro Stunde. - Statistisches Bundesamt"
     ),
     Pair(
         "Kannst du dich im Sommer in der Öffentlichkeit so kleiden wie du möchtest ohne das Gefühl zu haben überall angestarrt zu werden?",
-        "Fakt: Laut der U.S. Transgender Survey von 2015 erleben Transgender-Personen Diskriminierung und Gewalt in allen Bereichen der Gesellschaft, einschließlich ihrer Familien, Schulen, Arbeitsplätze, Obdachlosenunterkünfte, Ärzte, Notaufnahmen, Richter, Vermieter und Polizeibeamte."
+        "Fakt: Im Sommer steigen die Fälle der sexuellen Belässtigung in der Öffentlichkeit. Ein weiteres Problem ist das sogenannte Victim Blaming, bei dem die Schuld für sexuelle Belästigung aufgrund der Kleidung dem Opfer zugeschrieben wird."
     ),
     Pair(
         "Hast du das Gefühl du kannst dich jederzeit für Hilfe an die Polizei wenden?",
@@ -97,6 +89,6 @@ val fragenFaktenEng = listOf(
     ),
     Pair(
         "Wurde in deiner Schule deine Muttersprache gesprochen?",
-        "Fakt: Laut UNESCO wird in vielen Ländern der Unterricht nicht in der Muttersprache der Schüler durchgeführt. Dies kann zu erheblichen Lernschwierigkeiten führen und die Chancen auf akademischen Erfolg verringern."
+        "Fakt: Laut UNESCO werden weltweit 40% der Kinder in einer Sprache unterrichtet, die sie nicht verstehen. In Deutschland sind es 13%."
     ),
 )
