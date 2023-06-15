@@ -45,7 +45,7 @@ I've written the program in Kotlin, using IntelliJ. This project gave me the opp
 
 Loops: Loops are used multiple times in this code. An example is the while loop in the onboarding() function, which prompts the user to select a language until a valid input is made. Another while loop is used in the functions game1deu(), game1eng(), game1tur(), game1pol(), and game1arb() to prompt the user to input an answer to each question until a valid input is made.
 
-Classes: Classes are used in this code to model different things. For example, there is a RolleKarte class that models role cards for players. Each role card has a name, age, origin, fate, and gender.
+Classes: Classes are used in this code to model different things. For example, there is a RolleKarte class that models role cards for players. Each role card has a name, age, origin, fate, and gender. There is also an abstract class Language that serves as a base class for the specific language classes: English, German, Polish, Arabic, and Turkish. Each of these classes inherits from the Language class and implements the getMessage() method to retrieve messages in the respective language.
 
 Constructors: Constructors are implicitly used in this code to create instances of classes. For example, when creating role cards, the constructor of the RolleKarte class is invoked to create a new instance of this class. When creating a new language, the default constructor of the respective language class is invoked to create a new instance of this class.
 
