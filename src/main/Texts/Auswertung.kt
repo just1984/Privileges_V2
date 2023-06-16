@@ -20,7 +20,7 @@ fun auswertungEng() {
 }
 fun auswertungDEU() {
     print(ORANGE.ON)
-    println("Brillant, du hast alle ${fragenFaktenDEU.size} Fragen beantwortet.\n$yesCount davon mit Ja und $noCount davon mit Nein.")
+    println("Super, du hast alle ${fragenFaktenDEU.size} Fragen beantwortet.\n$yesCount davon mit Ja und $noCount davon mit Nein.")
     println()
     println("Jetzt kommt der Teil, in dem du über deine Antworten und Privilegien nachdenken kannst. Nimm dir Zeit und denke über jede der folgenden Fragen nach.".wordWrap(100))
     print(ORANGE.OFF)

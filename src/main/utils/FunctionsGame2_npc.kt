@@ -11,7 +11,7 @@ val pcs = mutableListOf<Pair<String, List<Int>>>().apply {
     addAll(badNames.shuffled().take(3).map { Pair(it, wenigerPrivilegien) }) // Füge 3 zufällige weibliche und ausländische Namen hinzu und verknüpfe sie mit "wenigerPrivilegien"
 }
 
-val additionalPositions = MutableList(5) { fragen.size * 10 } // Initialisiere die Position für jeden zusätzlichen Balken
+val additionalPositions = MutableList(5) { fragenFaktenDEU.size * 10 } // Initialisiere die Position für jeden zusätzlichen Balken
 
 fun updateAdditionalProgressBars() {
     for (i in additionalPositions.indices) {
@@ -22,6 +22,6 @@ fun updateAdditionalProgressBars() {
 fun printAdditionalProgressBars() {
     val colors = listOf(ORANGE.ON, GREEN.ON, RED.ON, BLUE.ON, YELLOW.ON)
     pcs.forEachIndexed { index, pc -> // Ersetze "pcNames" durch "pcs", um auf die Namen in den Paaren zuzugreifen
-        printProgressBar(additionalPositions[index], fragen.size * 20, colors[index], pc.first) // Benutze "pc.first" anstelle von "pcNames[index]"
+        printProgressBar(additionalPositions[index], fragenFaktenDEU.size * 20, colors[index], pc.first) // Benutze "pc.first" anstelle von "pcNames[index]"
     }
 }

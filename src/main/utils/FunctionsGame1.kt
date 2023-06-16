@@ -134,7 +134,7 @@ fun game1arb() {
             position -= 10
             noCount++
         }
-        printProgressBar(position, fragenArb.size * 20, WHITE.ON, userName)
+        printProgressBar(position, fragenFaktenARAB.size * 20, WHITE.ON, userName)
         updateAdditionalProgressBars()
         printAdditionalProgressBars()
         println(gemischteFragen[i].second.wordWrap(100))
