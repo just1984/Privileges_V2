@@ -1,3 +1,11 @@
+package Texts.ARAB
+
+import BLUE
+import ORANGE
+import chosenLanguage
+import roleList_ar
+import wordWrap
+
 fun onboarding2arab() {
     val rollenZuweisung = roleList_ar.shuffled()
     print(chosenLanguage?.getMessage("characterChoice")?.wordWrap(100))

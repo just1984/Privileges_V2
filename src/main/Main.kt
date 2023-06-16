@@ -1,3 +1,9 @@
+import Texts.ARAB.onboarding2arab
+import Texts.DEU.onboarding2deu
+import Texts.ENG.onboarding2eng
+import Texts.POL.onboarding2pol
+import Texts.TURK.onboarding2turk
+
 fun main() {
     var playAgain = "y"
     var playAgainDeutsch = "j"

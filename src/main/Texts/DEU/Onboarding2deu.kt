@@ -1,4 +1,12 @@
-fun onboarding2turk() {
+package Texts.DEU
+
+import BLUE
+import ORANGE
+import chosenLanguage
+import rollenListeDeu
+import wordWrap
+
+fun onboarding2deu() {
     val rollenZuweisung = rollenListeDeu.shuffled()
     print(chosenLanguage?.getMessage("characterChoice")?.wordWrap(100))
     val choice = readln()
@@ -11,14 +19,14 @@ fun onboarding2turk() {
         println(chosenLanguage?.getMessage("roleAdaption")?.wordWrap(100))
         println()
         print(ORANGE.ON)
-        println("Adın ${randomCharacter.name}, sen bir ${randomCharacter.geschlecht} ve ${randomCharacter.alter} yaşındasın. Kökenin ${randomCharacter.herkunft}. ${randomCharacter.schicksal}".wordWrap(100))
+        println("Dein Name ist ${randomCharacter.name}, du bist ${randomCharacter.geschlecht} und ${randomCharacter.alter} Jahre alt. Deine Herkunft ist ${randomCharacter.herkunft}. ${randomCharacter.schicksal}".wordWrap(100))
         print(ORANGE.OFF)
         Thread.sleep(3000)
     } else {
         println(chosenLanguage?.getMessage("invalidChoice")?.wordWrap(100))
-        onboarding2turk()
+        onboarding2deu()
     }
     println()
-    println("${BLUE.ON}Oyunu başlatmak için Enter'a basın${BLUE.OFF}.")
+    println("${BLUE.ON}Drücke Enter um das SPiel zu starten${BLUE.OFF}.")
     readln()
 }
