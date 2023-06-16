@@ -1,9 +1,9 @@
 class RolleKarte(
-    var name: String,
-    var alter: Int,
-    var herkunft: String,
-    var schicksal: String,
-    var geschlecht: String
+    val name: String,
+    val alter: Int,
+    val herkunft: String,
+    val geschlecht: String,
+    val schicksal: String
 )
 
 val rollenKarte1_class = RolleKarte(
@@ -182,7 +182,7 @@ val rollenKarte22_class = RolleKarte(
     schicksal = "Du bist Bibliothekarin. Du liebst Bücher und hilfst den Leuten gerne dabei, neue Bücher zu entdecken und zu lernen."
 )
 
-val rollenListe = listOf(
+val rollenListeDeu = listOf(
     rollenKarte1_class, rollenKarte2_class, rollenKarte3_class, rollenKarte4_class,
     rollenKarte5_class, rollenKarte6_class, rollenKarte7_class, rollenKarte8_class,
     rollenKarte9_class, rollenKarte10_class, rollenKarte11_class, rollenKarte12_class,

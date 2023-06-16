@@ -1,43 +1,9 @@
-fun printProgressBar(current: Int, total: Int, color: String = WHITE.ON, name: String = "") {
-    val progressBarLength = 50
-    val progress = (current.toDouble() / total.toDouble()) * progressBarLength
-    val filled = progress.toInt()
-    val remaining = progressBarLength - filled
-
-    val builder = StringBuilder()
-    val formattedName =
-        name.padEnd(10) // Formatieren Sie den Namen, um sicherzustellen, dass er eine Breite von 10 Zeichen hat
-    builder.append("$formattedName: ") // Fügen Sie den Namen vor dem Fortschrittsbalken hinzu
-    builder.append(color)
-    for (i in 0 until filled) {
-        builder.append("█")
-    }
-    for (i in 0 until remaining) {
-        builder.append(" ")
-    }
-    builder.append("|") // Fügen Sie den geraden Strich am Ende des Fortschrittsbalkens hinzu
-    builder.append(WHITE.OFF)
-    println("\r$builder")
-    //clearScreen100()
-}
-
-fun game1() {
-    when (chosenLanguage) {
-        is Deutsch -> game1deu()
-        is English -> game1eng()
-        is Tuerkisch -> game1tur()
-        is Polnisch -> game1pol()
-        is Arabisch -> game1arb()
-        else -> println("Es wurde keine Sprache gewaehlt.. Restarte das Programm.")
-    }
-}
-
-
-// Hier ist der Code der Die Fragen lädt und den Progress-Balken steuert:
+var yesCount = 0
+var noCount = 0
 
 fun game1deu() {
     var position = fragen.size * 10 / 2
-    val gemischteFragen = fragen.shuffled()
+    val gemischteFragen = fragenFaktenDEU.shuffled()
     for (i in gemischteFragen.indices) {
         var answer: String
         do {
@@ -60,14 +26,9 @@ fun game1deu() {
     println("")
 }
 
-
-// Globale Variablen
-var yesCount = 0
-var noCount = 0
-
 fun game1eng() {
     var position = fragen.size * 10
-    val gemischteFragenFakten = fragenFaktenEng.shuffled()  // Fragen und Fakten gemeinsam mischen
+    val gemischteFragenFakten = fragenFaktenEng.shuffled()
     for (i in gemischteFragenFakten.indices) {
         var answer: String
         do {
@@ -93,7 +54,7 @@ fun game1eng() {
         printProgressBar(position, fragen.size * 20, WHITE.ON, "Spieler1")
         updateAdditionalProgressBars()
         printAdditionalProgressBars()
-        println(gemischteFragenFakten[i].second.wordWrap(100))  // Fakt anzeigen
+        println(gemischteFragenFakten[i].second.wordWrap(100))
         println()
     }
     println("")

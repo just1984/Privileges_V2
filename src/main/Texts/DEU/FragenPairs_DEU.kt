@@ -1,4 +1,4 @@
-val fragenFaktenEng = listOf(
+val fragenFaktenDEU = listOf(
     Pair(
         "Hast du als Kind regelmäßig die Schule besucht (mindestens bis zur 9. Klasse)?",
         "Fakt: Rund 260 Millionen Kinder und Jugendliche weltweit gehen laut Schätzung der UNESCO nicht zur Schule. Das sind 1 von 5 Kindern und Jugendlichen im Grundschulalter. - Statistisches Bundesamt"
