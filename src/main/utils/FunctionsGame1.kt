@@ -63,7 +63,7 @@ fun game1eng() {
             position -= 10
             noCount++
         }
-        printProgressBar(position, fragenFaktenEng.size * 20, WHITE.ON, "Spieler1")
+        printProgressBar(position, fragenFaktenEng.size * 20, WHITE.ON, userName)
         updateAdditionalProgressBars()
         printAdditionalProgressBars()
         println(gemischteFragenFakten[i].second.wordWrap(100))
@@ -98,7 +98,7 @@ fun game1pol() {
             position -= 10
             noCount++
         }
-        printProgressBar(position, fragenFaktenPOL.size * 20, WHITE.ON, "Gracz1")
+        printProgressBar(position, fragenFaktenPOL.size * 20, WHITE.ON, userName)
         updateAdditionalProgressBars()
         printAdditionalProgressBars()
         println(gemischteFragen[i].second.wordWrap(100))
@@ -134,7 +134,7 @@ fun game1arb() {
             position -= 10
             noCount++
         }
-        printProgressBar(position, fragenArb.size * 20, WHITE.ON, "لاعب1")
+        printProgressBar(position, fragenArb.size * 20, WHITE.ON, userName)
         updateAdditionalProgressBars()
         printAdditionalProgressBars()
         println(gemischteFragen[i].second.wordWrap(100))
@@ -170,7 +170,7 @@ fun game1tur() {
             position -= 10
             noCount++
         }
-        printProgressBar(position, fragenFaktenTURK.size * 20, WHITE.ON, "Oyuncu1")
+        printProgressBar(position, fragenFaktenTURK.size * 20, WHITE.ON, userName)
         updateAdditionalProgressBars()
         printAdditionalProgressBars()
         println(gemischteFragen[i].second.wordWrap(100))
