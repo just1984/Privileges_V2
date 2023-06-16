@@ -1,6 +1,8 @@
 var yesCount = 0
 var noCount = 0
 
+// TODO hier stimmt etwas mit den anfangspositionen nicht
+
 fun game1deu() {
     var position = fragen.size * 10 / 2
     val gemischteFragen = fragenFaktenDEU.shuffled()
