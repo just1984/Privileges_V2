@@ -1,5 +1,4 @@
 var chosenLanguage: Language? = null
-var userName: String? = null
 fun welcomeUser() {
     val welcomeMessage = chosenLanguage?.getMessage("welcomeIntro", userName)
     if (welcomeMessage != null) {
@@ -12,7 +11,7 @@ abstract class Language {
 }
 class English : Language() {
     private val messages = mapOf(
-        "wahtsthename" to "What is your Name?",
+        "wahtsthename" to "Please enter your name: ",
         "welcomeIntro" to "${GREEN.ON}Welcome to the Privilege Game %s!${GREEN.OFF} This game is designed to shed light on societal inequalities and the uneven distribution of opportunities. Our goal is to foster empathy towards social minorities, encourage self-reflection on your societal position, and stimulate a stance of solidarity. Let's challenge our understanding and dive into the complex dynamics of privilege. ${RED.ON}Triggerwarning: Topics such as sexual violence or racism will be mentioned.${RED.OFF} ${BLUE.ON}Hit Enter${BLUE.OFF}.",
         "anleitungIntro" to "${GREEN.ON}The game works as follows:${GREEN.OFF} You will be asked 20+ questions. If you can answer the questions with 'yes', then press 1. If you want to answer with 'no', then press 2. For each question answered we take you a step forward or back. Additionally we added 5 NPCs. Everyone starts in the middle of the progress bar. ${BLUE.ON}Enter${BLUE.OFF}.",
         "characterChoice" to "${GREEN.ON}CHoose your character:${GREEN.OFF} do you want to play yourself, or do you like to choose one of 20 pre-made characters?\n\n1. I want to play myself\n2. I want to choose a pre-made character",
@@ -35,7 +34,7 @@ class Deutsch : Language() {
         "roleAdaption" to "Das ist deine Rolle. Versuche dich so gut wie möglich daran anzupassen. Schließe deine Augen und versuche dir für eine Sekunde vorzustellen, wie du dich in dieser Rolle fühlst. Beantworte alle folgenden Fragen basierend auf dieser Rolle.",
         "game1fragen" to "Frage {0}: {1}\n1 für Ja, 2 für Nein",
         "invalidChoice" to "${RED.ON}Du hast eine ungültige Option gewählt. Bitte versuche es erneut.${RED.OFF}\n\n",
-        "wahtsthename" to "Wie ist dein Name?",
+        "wahtsthename" to "Bitte gib deinen Namen ein: ",
         )
     override fun getMessage(key: String, userName: String?): String {
         return String.format(messages[key] ?: throw IllegalArgumentException(" .. $key"), userName)

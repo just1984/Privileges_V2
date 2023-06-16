@@ -1,3 +1,4 @@
+var userName = ""
 var yesCount = 0
 var noCount = 0
 
@@ -26,7 +27,7 @@ fun game1deu() {
             position -= 10
             noCount++
         }
-        printProgressBar(position, fragenFaktenDEU.size * 20, WHITE.ON, "Spieler1")
+        printProgressBar(position, fragenFaktenDEU.size * 20, WHITE.ON, userName)
         updateAdditionalProgressBars()
         printAdditionalProgressBars()
         println(gemischteFragen[i].second.wordWrap(100))
