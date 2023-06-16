@@ -1,37 +1,67 @@
 fun main() {
     var playAgain = "y"
+    var playAgainDeutsch = "j"
+    var playAgainPolnisch = "t"
+    var playAgainTuerkisch = "e"
+    var playAgainArabisch = "n"
+
     onboarding()
-    while (playAgain == "y") {
-        when (chosenLanguage) {
-            is Deutsch -> {
+
+    when (chosenLanguage) {
+        is Deutsch -> {
+            while (playAgainDeutsch == "j") {
                 onboarding2deu()
                 game1deu()
                 auswertungDEU()
+                println()
+                println("Möchten Sie nochmal spielen? (j/n)")
+                playAgainDeutsch = readln()
+                println()
             }
-            is English -> {
+        }
+        is English -> {
+            while (playAgain == "y") {
                 onboarding2eng()
                 game1eng()
                 auswertungEng()
+                println()
+                println("Do you like to play again? (y/n)")
+                playAgain = readln()
+                println()
             }
-            is Polnisch -> {
+        }
+        is Polnisch -> {
+            while (playAgainPolnisch == "t") {
                 onboarding2pol()
                 game1pol()
                 auswertungPol()
+                println()
+                println("Czy chcesz zagrać jeszcze raz? (t/n)")
+                playAgainPolnisch = readln()
+                println()
             }
-            is Tuerkisch -> {
+        }
+        is Tuerkisch -> {
+            while (playAgainTuerkisch == "e") {
                 onboarding2turk()
                 game1tur()
                 auswertungTurk()
+                println()
+                println("Tekrar oynamak ister misiniz? (e/h)")
+                playAgainTuerkisch = readln()
+                println()
             }
-            is Arabisch -> {
+        }
+        is Arabisch -> {
+            while (playAgainArabisch == "n") {
                 onboarding2arab()
                 game1arb()
                 auswertungArab()
+                println()
+                println("Hal tureed al-la'ib marra ukhra? (n/la)")
+                playAgainArabisch = readln()
+                println()
             }
         }
-        println()
-        println("Do you like to play again? (y/n)")
-        playAgain = readln()
-        println()
     }
 }
