@@ -23,11 +23,8 @@ fun onboarding() {
     print(ORANGE.OFF)
 
     languageChoice()
-
-    val welcomeIntro = chosenLanguage?.getMessage("welcomeIntro")
-    if (welcomeIntro != null) {
-        println(welcomeIntro.wordWrap(100))
-    }
+    askForUserName()
+    welcomeUser()
 
     readln()
 
