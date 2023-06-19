@@ -3,7 +3,8 @@ fun onboarding2_de() {
     println()
     val characterChoiceMessage =
         "${GREEN.ON}Wähle deinen Charakter:${GREEN.OFF} Möchtest du dich selbst spielen, oder möchtest du einen von 20 vorgefertigten Charakteren auswählen?"
-    val characterChoicemessage2 = "1. Ich möchte mich selbst spielen\n2. Ich möchte einen vorgefertigten Charakter wählen"
+    val characterChoicemessage2 =
+        "1. Ich möchte mich selbst spielen\n2. Ich möchte einen vorgefertigten Charakter wählen"
     println(characterChoiceMessage.wordWrap(100))
     println()
     println(characterChoicemessage2.wordWrap(100))
@@ -15,6 +16,8 @@ fun onboarding2_de() {
         val selfChoiceMessage =
             "Du hast dich entschieden, dich selbst zu spielen. Versuche, die Fragen so ehrlich wie möglich zu beantworten. ${BLUE.ON}Drücke Enter um das Spiel zu starten${BLUE.OFF}."
         println(selfChoiceMessage.wordWrap(100))
+        println()
+        readln()
     } else if (choice == "2") {
         val randomCharacter = rollenZuweisung.first()
         println()
