@@ -9,7 +9,7 @@ Privileges is a terminal-based game designed to highlight societal inequalities 
 The game challenges our understanding and delves into the complex dynamics of privilege. It includes a series of questions that players answer based on their real-life experiences or the experiences of a pre-defined character. The game tracks the player's progress based on their answers, providing a visual representation of the privileges (or lack thereof) they may experience in their life.
 
 ## Installation
-To start the game, run the main.kt file located in the src/main/kotlin directory.
+To start the game, run the main.kt file located in the src/main/ directory.
 
 ## Game Structure and Flow
 The game starts with an onboarding process where players choose the language they want to play the game in. The game currently supports only German, but you're encouraged to contribute and help in expanding to other languages.
