@@ -21,7 +21,6 @@ fun onboarding() {
     }
 
     print(ORANGE.OFF)
-
     languageChoice()
     askForUserName()
     welcomeUser()

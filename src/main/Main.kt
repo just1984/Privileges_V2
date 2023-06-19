@@ -17,6 +17,7 @@ fun main() {
         is Deutsch -> {
             while (playAgainDeutsch == "j") {
                 onboarding2deu()
+                clearScreen100()
                 game1deu()
                 auswertungDEU()
                 println()

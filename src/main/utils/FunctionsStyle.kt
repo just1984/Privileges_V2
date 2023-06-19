@@ -9,6 +9,12 @@ fun clearScreen10() {
         println()
     }
 }
+
+fun clearScreen5() {
+    for (i in 1..5) {
+        println()
+    }
+}
 fun String.wordWrap(len: Int): String {
     val words = this.split(' ')
     val lines = ArrayList<String>()
@@ -37,7 +43,7 @@ fun printInBox(text: String) {
     println(line)
 }
 
-fun printInBox2(text: String, maxLineLength: Int = 80) {
+fun printInBox2(text: String, maxLineLength: Int = 100) {
     val words = text.split(" ")
     val lines = mutableListOf<String>()
     var line = ""
@@ -57,12 +63,11 @@ fun printInBox2(text: String, maxLineLength: Int = 80) {
     lines.add(line)
 
     val maxLength = lines.maxOf { it.length }
-    val border = "-".repeat(maxLength + 4)
+    val border = "${GREEN.ON}-".repeat(maxLength + 4) + "${GREEN.OFF}"
 
     println(border)
     lines.forEach { l ->
-        println("| ${l.padEnd(maxLength, ' ')} |")
+        println("${GREEN.ON}|${GREEN.OFF} ${l.padEnd(maxLength, ' ')} ${GREEN.ON}|${GREEN.OFF}")
     }
     println(border)
 }
-

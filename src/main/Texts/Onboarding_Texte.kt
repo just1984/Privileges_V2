@@ -35,6 +35,7 @@ class Deutsch : Language() {
         "game1fragen" to "Frage {0}: {1}\n1 für Ja, 2 für Nein",
         "invalidChoice" to "${RED.ON}Du hast eine ungültige Option gewählt. Bitte versuche es erneut.${RED.OFF}\n\n",
         "wahtsthename" to "${GREEN.ON}Bitte gib deinen Namen ein: ${GREEN.OFF}",
+        "howmanypalyers" to "${GREEN.ON}Wie viele Spieler möchten mitspielen? Bitte wähle eine Zahl von 1-5 und bestaetige diese mit Enter.${GREEN.OFF}",
         )
     override fun getMessage(key: String, userName: String?): String {
         return String.format(messages[key] ?: throw IllegalArgumentException(" .. $key"), userName)
