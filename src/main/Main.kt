@@ -10,7 +10,7 @@ fun main() {
         clearScreen100()
         spielDynamik_DE()
         evaluation_de()
-        println("Möchtest du noch einmal spielen? (j/n)")
+        println("\n\nMöchtest du noch einmal spielen? (j/n)")
         nochEinmal_DE = readln()
     }
 }

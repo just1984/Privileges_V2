@@ -71,3 +71,32 @@ fun printInBox2(text: String, maxLineLength: Int = 100) {
     }
     println(border)
 }
+
+fun printInBox3(text: String, maxLineLength: Int = 100) {
+    val words = text.split(" ")
+    val lines = mutableListOf<String>()
+    var line = ""
+
+    words.forEach { word ->
+        if (line.length + word.length > maxLineLength) {
+            lines.add(line)
+            line = word
+        } else {
+            if (line.isNotEmpty()) {
+                line += " "
+            }
+            line += word
+        }
+    }
+
+    lines.add(line)
+
+    val maxLength = lines.maxOf { it.length }
+    val border = "${GREEN.ON}-".repeat(maxLength + 4) + "${GREEN.OFF}"
+
+    println(border)
+    lines.forEach { l ->
+        println("${GREEN.ON}|${GREEN.OFF} ${RED.ON}${l.padEnd(maxLength, ' ')}${RED.OFF} ${GREEN.ON}|${GREEN.OFF}")
+    }
+    println(border)
+}
