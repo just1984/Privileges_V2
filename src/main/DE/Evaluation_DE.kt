@@ -1,3 +1,4 @@
+// TODO: Das Alles solle noch etwas aufgeraeumter sein.
 fun evaluation_de() {
     print(ORANGE.ON)
     println("Super $userName, du hast alle ${fragenFaktenDEU.size} Fragen beantwortet.\n$yesCount davon mit Ja und $noCount davon mit Nein.")
