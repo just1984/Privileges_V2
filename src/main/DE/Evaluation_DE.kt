@@ -1,4 +1,4 @@
-fun auswertungDEU() {
+fun evaluation_de() {
     print(ORANGE.ON)
     println("Super, du hast alle ${fragenFaktenDEU.size} Fragen beantwortet.\n$yesCount davon mit Ja und $noCount davon mit Nein.")
     println()
