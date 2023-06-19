@@ -8,7 +8,8 @@ import wordWrap
 
 fun onboarding2turk() {
     val rollenZuweisung = rollenListeDeu.shuffled()
-    print(chosenLanguage?.getMessage("characterChoice")?.wordWrap(100))
+    println(chosenLanguage?.getMessage("characterChoice")?.wordWrap(100))
+    print("${GREEN.ON}--> ${GREEN.OFF}")
     val choice = readln()
     if (choice == "1") {
         println()

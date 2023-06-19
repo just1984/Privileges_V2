@@ -1,15 +1,14 @@
-package Texts.ARAB
+package Texts._NEW_LANGUAGE_TEMPLATE
 
 import BLUE
 import ORANGE
 import chosenLanguage
-import roleList_ar
+import roleListEng
 import wordWrap
 
-fun onboarding2arab() {
-    val rollenZuweisung = roleList_ar.shuffled()
-    println(chosenLanguage?.getMessage("characterChoice")?.wordWrap(100))
-    print("${GREEN.ON}--> ${GREEN.OFF}")
+fun onboarding2eng() {
+    val rollenZuweisung = roleListEng.shuffled()
+    print(chosenLanguage?.getMessage("characterChoice")?.wordWrap(100))
     val choice = readln()
     if (choice == "1") {
         println()
@@ -20,14 +19,14 @@ fun onboarding2arab() {
         println(chosenLanguage?.getMessage("roleAdaption")?.wordWrap(100))
         println()
         print(ORANGE.ON)
-        println("اسمك هو ${randomCharacter.name}، أنت ${randomCharacter.gender} وعمرك ${randomCharacter.age} سنة. أنت تأتي من ${randomCharacter.origin}. ${randomCharacter.fate}".wordWrap(100))
+        println("Your name is ${randomCharacter.name}, ${randomCharacter.gender} and you are ${randomCharacter.age} years old. You are from ${randomCharacter.origin}. ${randomCharacter.fate}".wordWrap(100))
         print(ORANGE.OFF)
         Thread.sleep(3000)
     } else {
         println(chosenLanguage?.getMessage("invalidChoice")?.wordWrap(100))
-        onboarding2arab()
+        onboarding2eng()
     }
     println()
-    println("${BLUE.ON}اضغط Enter لبدء اللعبة${BLUE.OFF}.")
+    println("${BLUE.ON}Hit Enter to start the Game${BLUE.OFF}.")
     readln()
 }

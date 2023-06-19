@@ -8,7 +8,8 @@ import wordWrap
 
 fun onboarding2deu() {
     val rollenZuweisung = rollenListeDeu.shuffled()
-    print(chosenLanguage?.getMessage("characterChoice")?.wordWrap(100))
+    println(chosenLanguage?.getMessage("characterChoice")?.wordWrap(100))
+    print("${GREEN.ON}--> ${GREEN.OFF}")
     val choice = readln()
     if (choice == "1") {
         println()
@@ -27,6 +28,6 @@ fun onboarding2deu() {
         onboarding2deu()
     }
     println()
-    println("${BLUE.ON}Drücke Enter um das SPiel zu starten${BLUE.OFF}.")
+    println("${BLUE.ON}Drücke Enter um das Spiel zu starten${BLUE.OFF}.")
     readln()
 }

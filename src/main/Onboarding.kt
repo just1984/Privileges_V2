@@ -25,13 +25,11 @@ fun onboarding() {
     languageChoice()
     askForUserName()
     welcomeUser()
-
-    readln()
-
+    println()
     val anleitungIntro = chosenLanguage?.getMessage("anleitungIntro")
     if (anleitungIntro != null) {
         println(anleitungIntro.wordWrap(100))
     }
+    println()
 
-    readln()
 }

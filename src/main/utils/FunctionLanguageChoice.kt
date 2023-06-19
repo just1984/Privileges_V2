@@ -1,7 +1,8 @@
 fun languageChoice() {
     var validInput = false
     while (!validInput) {
-        println("Please choose a language:\n1: Deutsch\n2: English\n3: Türkçe\n4: Polski\n5: العربية")
+        println("${GREEN.ON}Please choose a language:${GREEN.OFF}\n1: Deutsch\n2: English\n3: Türkçe\n4: Polski\n5: العربية")
+        print("${GREEN.ON}--> ${GREEN.OFF}")
         val languageSelector = readln()
         println()
         when {
