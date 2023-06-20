@@ -1,6 +1,0 @@
-If you like to add a new language, you need to edit
-the files inside Texts/_NEW_LANGUAGE_TEMPLATE
-
-In addition, you need to add the new language to the these files too:
-utils/FunctionLanguageChoice.kt
-utils/FunctionsGame1.kt
