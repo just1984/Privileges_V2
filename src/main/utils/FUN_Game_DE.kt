@@ -2,19 +2,24 @@ fun spielDynamik_DE() {
     var position = fragenFaktenDEU.size * 10
     val gemischteFragen = fragenFaktenDEU.shuffled()
     for (i in gemischteFragen.indices) {
-        var answer: String
+        var answer = ""
         do {
-            print(CYAN.ON)
-            println("Frage ${i + 1} / ${fragenFaktenDEU.size}: ${gemischteFragen[i].first.wordWrap(100)}\n1 für Ja, 2 für Nein")
-            print(CYAN.OFF)
-            print("${CYAN.ON}--> ${CYAN.OFF}")
-            answer = readln()
-            println()
-            if (answer != "1" && answer != "2") {
+            try {
+                print(CYAN.ON)
+                println("Frage ${i + 1} / ${fragenFaktenDEU.size}: ${gemischteFragen[i].first.wordWrap(100)}\n1 für Ja, 2 für Nein")
+                print(CYAN.OFF)
+                print("${CYAN.ON}--> ${CYAN.OFF}")
+                answer = readln()
+                println()
+                if (answer != "1" && answer != "2") {
+                    throw IllegalArgumentException("Ungültige Eingabe. Bitte gib 1 für Ja oder 2 für Nein ein.")
+                }
+            } catch (e: IllegalArgumentException) {
                 print(RED.ON)
-                println("Ungültige Eingabe, bitte gib 1 für Ja oder 2 für Nein ein.")
+                println(e.message)
                 print(RED.OFF)
                 println()
+                continue
             }
         } while (answer != "1" && answer != "2")
 
@@ -33,6 +38,8 @@ fun spielDynamik_DE() {
         clearScreen5()
     }
 }
+
+
 
 /* Zuerst lege ich zwei globale Variablen fest: userName und yesCount, noCount.
 Diese speichern den Namen der Benutzer*in und die Anzahl der mit 'Ja' bzw. 'Nein' beantworteten Fragen.
