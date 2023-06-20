@@ -1,7 +1,11 @@
-fun printProgressBar(current: Int, total: Int, color: String = WHITE.ON, name: String = spielName) {
+fun printProgressBar(
+    current: Int, total: Int, color:
+    String = WHITE.ON, name: String = spielName
+) {
 
     val progressBarLength = 50
-    val progress = (current.toDouble() / total.toDouble()) * progressBarLength
+    val progress = (current.toDouble() /
+            total.toDouble()) * progressBarLength
     val filled = progress.toInt()
     val remaining = progressBarLength - filled
 
