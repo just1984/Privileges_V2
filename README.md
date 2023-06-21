@@ -1,5 +1,3 @@
-# As of today (June 19th 2023) this game is still in development.
-
 ![Screenshot](./img/screen2priv.JPG)
 
 # Privileges: A Terminal-Based Game
