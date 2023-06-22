@@ -1,9 +1,9 @@
-
 fun clearScreen100() {
     for (i in 1..100) {
         println()
     }
 }
+
 fun clearScreen10() {
     for (i in 1..10) {
         println()
@@ -15,6 +15,7 @@ fun clearScreen5() {
         println()
     }
 }
+
 fun String.wordWrap(len: Int): String {
     val words = this.split(' ')
     val lines = ArrayList<String>()
