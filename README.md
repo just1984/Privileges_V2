@@ -51,5 +51,23 @@ Functions: The code uses various functions to carry out specific tasks. For inst
 
 ![Syntax Institute](./img/syntax-alt-image.png)
 
+These are the Slides used for my presentation
+[.pdf here](https://github.com/just1984/Privileges_V2/blob/main/img/Presentation/Presentation_M2.pdf)
+
 ![Syntax Institute](./img/Presentation/1%20Titel.jpg)
+
+![Syntax Institute](./img/Presentation/2%20Kursinhalte.jpg)
+
+![Syntax Institute](./img/Presentation/3%20About.jpg)
+
+![Syntax Institute](./img/Presentation/4%20Styleguide.jpg)
+
+![Syntax Institute](./img/Presentation/5%20Installation%20%26%20Game%20Flow.jpg)
+
+![Syntax Institute](./img/Presentation/6%20Screenshots.jpg)
+
+![Syntax Institute](./img/Presentation/7%20Code%20Snippets.jpg)
+
+![Syntax Institute](./img/Presentation/8%20License%20etc.jpg)
+
 
