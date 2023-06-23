@@ -1,6 +1,6 @@
-var userName = ""
 var yesCount = 0
 var noCount = 0
+var userName = ""
 var spielName = ""
 fun main() {
     var nochEinmal_DE = "j"

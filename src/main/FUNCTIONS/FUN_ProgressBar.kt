@@ -1,7 +1,9 @@
 fun printProgressBar(
-    current: Int, total: Int, color:
-    String = WHITE.ON, name: String = spielName
-) {
+    current: Int,
+    total: Int,
+    color:
+    String = WHITE.ON,
+    name: String = spielName) {
 
     val progressBarLength = 50
     val progress = (current.toDouble() /
@@ -25,10 +27,12 @@ fun printProgressBar(
     println("\r$builder")
 }
 
+
+
 /* Die Funktion printProgressBar wird verwendet, um eine Fortschrittsleiste in der Konsole anzuzeigen.
 Sie nimmt vier Parameter entgegen:
 1. current: Dieser Parameter repräsentiert den aktuellen Fortschritt.
-2. total: Dieser Parameter repräsentiert den gesamten Fortschritt, der erreicht werden soll.
+2. total: Dieser Parameter repräsentiert den gesamten Fortschritt, der erreicht werden kann.
 3. color: Dieser Parameter ist optional und setzt die Farbe der Fortschrittsleiste.
    Wenn keine Farbe angegeben wird, wird standardmäßig Weiß verwendet.
 4. name: Dieser Parameter ist der Name, der vor der Fortschrittsleiste angezeigt wird.
