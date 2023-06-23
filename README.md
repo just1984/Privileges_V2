@@ -51,3 +51,5 @@ Functions: The code uses various functions to carry out specific tasks. For inst
 
 ![Syntax Institute](./img/syntax-alt-image.png)
 
+![Syntax Institute](./img/Presentation/1%20Titel.jpg)
+
